@@ -1,5 +1,10 @@
 return {
   {
+    "autor/flash.nvim",
+    enabled = false,
+  },
+
+  {
     "akinsho/toggleterm.nvim",
     opts = {
       open_mapping = [[<c-\>]],
@@ -9,6 +14,7 @@ return {
       },
     },
   },
+
   {
     "lukas-reineke/indent-blankline.nvim",
     config = function()
@@ -26,41 +32,7 @@ return {
       "nvim-telescope/telescope-file-browser.nvim",
     },
     keys = {
-      {
-        ";f",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.find_files({
-            no_ignore = false,
-            hidden = true,
-          })
-        end,
-        desc = "Lists files in your current working directory, respects .gitignore",
-      },
-      {
-        ";r",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.live_grep()
-        end,
-        desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
-      },
-      {
-        "\\\\",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.buffers()
-        end,
-        desc = "Lists open buffers",
-      },
-      {
-        ";;",
-        function()
-          local builtin = require("telescope.builtin")
-          builtin.resume()
-        end,
-        desc = "Resume the previous telescope picker",
-      },
+
       {
         ";e",
         function()
