@@ -4,6 +4,7 @@ return {
     "numToStr/Comment.nvim",
     opts = {
       -- add any options here
+      -- gcc to comment selection
     },
   },
 

@@ -17,7 +17,7 @@ return {
       require("onedarkpro").setup({
         colors = {},
         options = {
-          transparency = false,
+          transparency = true,
           cursorline = true,
         },
       })
