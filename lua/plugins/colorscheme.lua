@@ -17,11 +17,11 @@ return {
       require("onedarkpro").setup({
         colors = {},
         options = {
-          transparency = true,
+          transparency = false,
           cursorline = true,
         },
       })
-      vim.cmd("colorscheme onedark_vivid")
+      vim.cmd("colorscheme vaporwave")
     end,
   },
 
